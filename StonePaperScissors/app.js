@@ -1,7 +1,10 @@
 const choices = document.querySelectorAll(".choice");
-let userScore = document.querySelector("#user-score");
-let compScore = document.querySelector("#comp-score");
 const msg = document.querySelector("#msg");
+
+const userScorePara = document.querySelector("#user-score");
+const compScorePara = document.querySelector("#comp-score");
+let userScore = 0;
+let compScore = 0;
 
 choices.forEach((choice) => {
     choice.addEventListener("click", () => {
@@ -11,28 +14,11 @@ choices.forEach((choice) => {
     });
 });
 
-const gameDraw = () => {
-    console.log("Game Draw!");
-    msg.innerText="Game Draw!";
-    msg.style.backgroundColor = "#081b31";
-}
-
-const showResult = (result) => {
-    msg.innerText = result === true ? "You win!" : "You loose";
-    msg.style.backgroundColor = result === true ? "green" : "red";
-    if(result){
-        userScore++;
-    }
-    else{
-        compScore++;
-    }
-    console.log(`userscore${userScore} ,compscore${compScore}`);
-}
-
 const playGame = (userChoice) => {
+    //Generate computer choice
     let compChoice = genCompChoice();
     let result = true;
-    console.log(`Comp choice: ${compChoice}`);
+    
     if (userChoice === compChoice) {
         gameDraw();
     }
@@ -49,9 +35,20 @@ const playGame = (userChoice) => {
             // compchoice = rock || paper
             result = compChoice === "rock" ? false : true;
         }
-        showResult(result);
+        showResult(result, userChoice, compChoice);
     }
 };
+
+const gameDraw = () => {
+    msg.innerText = "Game was Draw. Play again.";
+    msg.style.backgroundColor = "#081b31";
+}
+
+const showResult = (result, userChoice, compChoice) => {
+    result ? userScore++ : compScore++;
+    msg.innerText = result === true ? `You win! Your ${userChoice} beats ${compChoice}` : `You lost. ${compChoice} beats your ${userChoice}`;
+    msg.style.backgroundColor = result === true ? "green" : "red";
+}
 
 const genCompChoice = () => {
     let allChoices = ["rock", "paper", "scissor"];
