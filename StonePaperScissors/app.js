@@ -9,7 +9,6 @@ let compScore = 0;
 choices.forEach((choice) => {
     choice.addEventListener("click", () => {
         const userChoice = choice.getAttribute("id");
-        console.log(`Your choice: ${userChoice}`);
         playGame(userChoice);
     });
 });
@@ -18,7 +17,7 @@ const playGame = (userChoice) => {
     //Generate computer choice
     let compChoice = genCompChoice();
     let result = true;
-    
+
     if (userChoice === compChoice) {
         gameDraw();
     }
@@ -46,6 +45,7 @@ const gameDraw = () => {
 
 const showResult = (result, userChoice, compChoice) => {
     result ? userScore++ : compScore++;
+    result ? userScorePara.innerText = userScore : compScorePara.innerText = compScore;
     msg.innerText = result === true ? `You win! Your ${userChoice} beats ${compChoice}` : `You lost. ${compChoice} beats your ${userChoice}`;
     msg.style.backgroundColor = result === true ? "green" : "red";
 }
