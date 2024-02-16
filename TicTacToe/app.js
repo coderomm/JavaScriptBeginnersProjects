@@ -1,7 +1,7 @@
 const boxes = document.querySelectorAll(".box");
 const resetBtn = document.querySelector("#reset-btn");
 
-let printVar = "X"
+let turn = "X"
 
 resetBtn.addEventListener("click", () => {
     boxes.forEach((box) => {
@@ -13,8 +13,8 @@ resetBtn.addEventListener("click", () => {
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
         if (box.getAttribute("disable") !== "true") {
-            box.innerHTML = printVar;
-            printVar === "X" ? printVar = "O" : printVar = "X";
+            box.innerHTML = turn;
+            turn === "X" ? turn = "O" : turn = "X";
             box.setAttribute("disable", "true");
         }
     })
