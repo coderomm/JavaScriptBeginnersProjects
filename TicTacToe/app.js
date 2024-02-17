@@ -39,5 +39,9 @@ const checkWinner = () => {
     for (pattern of winPatterns) {
         console.log(pattern);
         console.log(boxes[pattern[0]]);
+        let pos1 = boxes[pattern[0]];
+        let pos2 = boxes[pattern[1]];
+        let pos3 = boxes[pattern[2]];
+
     }
 }
