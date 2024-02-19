@@ -1,4 +1,4 @@
-Here are my JavaScript projects 
+Following are JavaScript projects 
 which I created while learning JavaScript.
 
 1. Create TicTacToe game.
