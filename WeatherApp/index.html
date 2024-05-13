@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-app">
+        <header class="app-header">
+            <input type="text" placeholder="Search City..." class="search-input">
+            <button class="search-button"><i class="fas fa-search"></i> Search</button>
+        </header>
+        <main class="weather-display">
+            <h1 class="city-name">Jaipur</h1>
+            <p class="weather-description"><i class="fas fa-smog"></i> Haze</p>
+            <p class="temperature"><i class="fas fa-thermometer-half"></i> 31.62°C</p>
+            <div class="details-grid">
+                <div><i class="fas fa-temperature-low"></i> Min Temp: <span class="min-temp">31.62°C</span></div>
+                <div><i class="fas fa-temperature-high"></i> Max Temp: <span class="max-temp">31.62°C</span></div>
+                <div><i class="fas fa-tint"></i> Humidity: <span class="humidity">35%</span></div>
+                <div><i class="fas fa-wind"></i> Wind: <span class="wind-speed">2.57 km/h</span></div>
+                <div><i class="fas fa-compass"></i> Wind Direction: <span class="wind-direction">80°</span></div>
+                <div><i class="fas fa-cloud"></i> Cloudiness: <span class="cloudiness">40%</span></div>
+                <div><i class="fas fa-eye"></i> Visibility: <span class="visibility">4000m</span></div>
+                <div><i class="fas fa-gauge-high"></i> Pressure: <span class="pressure">1011 hPa</span></div>
+                <div><i class="fas fa-sun"></i> Sunrise: <span class="sunrise">06:00 AM</span></div>
+                <div><i class="fas fa-moon"></i> Sunset: <span class="sunset">07:00 PM</span></div>
+                <div><i class="fas fa-clock"></i> Timezone: <span class="timezone">UTC+5:30</span></div>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
