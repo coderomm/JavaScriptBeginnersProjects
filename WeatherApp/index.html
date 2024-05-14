@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="weather-app">
         <header class="app-header">
@@ -15,7 +17,10 @@
         </header>
         <main class="weather-display">
             <h1 class="city-name">Jaipur</h1>
-            <p class="weather-description"><i class="fas fa-smog"></i> Haze</p>
+            <p class="weather-description">
+                <img src="https://openweathermap.org/img/wn/02d.png" alt="Weather Icon" class="weather-icon">
+                <span class="weather-text">Haze</span>
+            </p>
             <p class="temperature"><i class="fas fa-thermometer-half"></i> 31.62°C</p>
             <div class="details-grid">
                 <div><i class="fas fa-temperature-low"></i> Min Temp: <span class="min-temp">31.62°C</span></div>
@@ -34,4 +39,5 @@
     </div>
     <script src="app.js"></script>
 </body>
+
 </html>
