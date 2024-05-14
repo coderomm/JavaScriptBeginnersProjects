@@ -43,7 +43,10 @@ html {
 .search-input {
     flex-grow: 2;
     background: rgba(255, 255, 255, 0.5);
-    color: black;
+    color: #ffffff;
+}
+.search-input::placeholder{
+    color: #ffffff;
 }
 
 .search-button {
