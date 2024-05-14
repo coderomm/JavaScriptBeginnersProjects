@@ -73,7 +73,6 @@ const updateWeatherDisplay = (data) => {
     const weatherIconUrl = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
     document.querySelector('.city-name').textContent = data.name;
     document.querySelector('.weather-text').textContent = `${data.weather[0].description}`;
-    console.log(document.querySelector('.weather-description').innerHTML)
     document.querySelector('.temperature').innerHTML = `<i class="fas fa-thermometer-half"></i> ${data.main.temp}°C`;
     document.querySelector('.min-temp').textContent = `${data.main.temp_min}°C`;
     document.querySelector('.max-temp').textContent = `${data.main.temp_max}°C`;
