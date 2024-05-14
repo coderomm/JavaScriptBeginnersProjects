@@ -9,7 +9,7 @@ const setUpTimer = () => {
     timer = setInterval(() => {
         const randomCity = getRandomCity();
         getWeather(randomCity);
-    }, 2000);
+    }, 7000);
 }
 
 const getRandomCity = () => {
@@ -42,7 +42,9 @@ searchBtn.addEventListener("click", (e) => {
     if (req) {
         clearInterval(timer);
         getWeather(req);
-        setUpTimer();
+        if (!searchInput.value.trim()) {
+            setUpTimer();
+        }
     }
     else {
         alert('Please enter a city name.');
