@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Experience the classic Rock Paper Scissors game with a modern twist! Engage in this timeless strategy game enhanced with vibrant visuals and intuitive gameplay. Perfect for quick entertainment or sharpening your decision-making skills.">
+  <meta name="keywords" content="Rock Paper Scissors, Online Game, Strategy Game, HTML Game, Interactive Game">
+  <meta name="author" content="Om Sharma, aka coder om">
+  <title>Neon Clash: Rock Paper Scissors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/coderom.jpeg" type="image/x-icon">
 </head>
+
 <body>
-    <div class="container">
-        <h1>Rock Paper Scissors</h1>
-        <div class="choices">
-            <div class="choice" id="rock"><i class="far fa-hand-rock"></i></div>
-            <div class="choice" id="paper"><i class="far fa-hand-paper"></i></div>
-            <div class="choice" id="scissors"><i class="far fa-hand-scissors"></i></div>
-        </div>
-        <div class="score-board">
-            <div class="score" id="user-label">Player <span id="user-score">0</span></div>
-            <div class="score" id="computer-label">Computer <span id="comp-score">0</span></div>
-        </div>
-        <p id="result-message">Choose an option to start the game</p>
+  <div class="container">
+    <h1>Rock Paper Scissors</h1>
+    <div class="choices">
+      <div class="choice user-choice" id="user-choice"><i class="fas fa-question"></i></div>
+      <div class="choice computer-choice" id="computer-choice"><i class="fas fa-question"></i></div>
     </div>
-    <script src="app.js"></script>
+    <div class="options">
+      <button class="btn" id="rock"><i class="fas fa-hand-rock"></i> Rock</button>
+      <button class="btn" id="paper"><i class="fas fa-hand-paper"></i> Paper</button>
+      <button class="btn" id="scissors"><i class="fas fa-hand-scissors"></i> Scissors</button>
+    </div>
+    <div class="score-board">
+      <div class="score" id="user-label">Player (You) <span id="user-score">0</span></div>
+      <div class="score" id="computer-label">Computer <span id="comp-score">0</span></div>
+    </div>
+    <p id="result-message">Choose an option to start the game</p>
+  </div>
+  <script src="app.js"></script>
 </body>
+
 </html>
