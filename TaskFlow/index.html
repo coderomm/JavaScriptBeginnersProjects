@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="todo-container">
+            <header>
+                <h1>Your Tasks</h1>
+                <div class="input-field">
+                    <input type="text" id="new-task" placeholder="What needs to be done?">
+                    <button onclick="addTask()"><i class="fas fa-plus"></i></button>
+                </div>
+            </header>
+            <ul id="task-list">
+                <!-- Task items will be inserted here -->
+            </ul>
+            <footer>
+                <button class="filter-btn" onclick="filterTasks('all')">All</button>
+                <button class="filter-btn" onclick="filterTasks('active')">Active</button>
+                <button class="filter-btn" onclick="filterTasks('completed')">Completed</button>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
