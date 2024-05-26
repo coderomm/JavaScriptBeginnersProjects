@@ -33,26 +33,18 @@
         </nav>
     </header>
     <main class="container mt-4">
-        <div class="filters mb-3">
-            <select id="category" class="form-select">
-                <option value="">All Categories</option>
-                <option value="business">Business</option>
-                <option value="entertainment">Entertainment</option>
-                <option value="general">General</option>
-                <option value="health">Health</option>
-                <option value="science">Science</option>
-                <option value="sports">Sports</option>
-                <option value="technology">Technology</option>
-            </select>
-            <select id="country" class="form-select">
-                <option value="">All Countries</option>
-                <option value="us">United States</option>
-                <option value="uk">United Kingdom</option>
-                <!-- Add other countries as needed -->
-            </select>
-            <input type="text" id="searchQuery" class="form-control" placeholder="Search news...">
-            <button onclick="fetchNews()" class="btn btn-primary">Search</button>
+        <div class="filter-tabs">
+            <div class="tab" name="it">IT</div>
+            <div class="tab" name="technology">Technology</div>
+            <div class="tab" name="software">Software</div>
+            <div class="tab" name="web">Web</div>
+            <div class="tab" name="ecommerce">Ecommerce</div>
+            <div class="tab" name="science">Science</div>
+            <div class="tab" name="sports">Sports</div>
+            <div class="tab" name="entertainment">Entertainment</div>
+            <div class="tab" name="business">Business</div>
         </div>
+        
         <div id="news-articles" class="row">
             <!-- News articles will be injected here -->
         </div>
