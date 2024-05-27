@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -8,8 +9,26 @@ body, html {
     color: #ffffff;
 }
 
+.form-control {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+.form-control::placeholder {
+    color: #fff;
+}
+
+.form-control:focus {
+    color: #fff;
+}
+
 .navbar {
     background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 }
 
 .news-item {
@@ -58,18 +77,28 @@ body, html {
     border-color: #f50057;
 }
 
-.filter-tabs{
+.filter-tabs {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    column-gap: 1rem;
+    row-gap: 0.5rem;
+    flex-wrap: wrap;
 }
-.filter-tabs .tab{
+
+.filter-tabs .tab {
     background: rgba(255, 255, 255, 0.5);
     padding: 0.5rem 1rem;
     border-radius: 5px;
     cursor: pointer;
 }
-.filter-tabs .tab:hover{
+
+.filter-tabs .tab:hover {
     background: rgba(255, 255, 255, 0.2);
     transition: background 0.2s ease-out;
+}
+
+.search-everything {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
