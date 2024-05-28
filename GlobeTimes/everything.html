@@ -22,7 +22,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">NewsApp</a>
+                <a class="navbar-brand" href="index.html">GlobeTimes</a>
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Top Headlines</a>
@@ -46,21 +46,20 @@
     </main>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            document.querySelector('#goForSearch').addEventListener('click', function () {
-                const searchQuery = document.getElementById('searchQuery').value;
-                if (searchQuery !== "" && searchQuery !== null) {
-                    fetchNews(searchQuery);
-                }
+        document.querySelector('#goForSearch').addEventListener('click', function () {
+            const searchQuery = document.getElementById('searchQuery').value;
+            if (searchQuery !== "" && searchQuery !== null) {
+                fetchNews(searchQuery);
+            }
+            else {
                 alert("Enter query")
-            })
-            fetchNews();
-        });
+            }
+        })
 
         async function fetchNews(query) {
             const apiKey = '4366420042f844258a61db19017dd9c8';
 
-            let apiUrl = `https://newsapi.org/v2/everything?&q=${encodeURIComponent(query)}&sortBy=popularity&apiKey=${apiKey}`;
+            let apiUrl = `https://newsapi.org/v2/everything?q=${encodeURIComponent(query)}&sortBy=popularity&apiKey=${apiKey}`;
 
             try {
                 const response = await fetch(apiUrl);
