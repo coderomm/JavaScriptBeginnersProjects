@@ -1,10 +1,10 @@
-##I try to create atleast one JavaScript project every week.
+# 🌟 Weekly JavaScript Projects
 
-Untill now created this:
+I aim to create at least one JavaScript project every week. Here are my completed projects so far:
 
-1. Create TicTacToe game.
-2. Create SPS game.
-3. Create Currency Converter.
-4. PrakritiPulse (Used Wheather API)
-5. TaskFlow
-6. GlobeTimes (Used News API)
+1. 🎮 **TicTacToe Game**
+2. ✊🧻✂️ [**Stone-Paper-Scissor Game**](https://stone-paper-scissor-play.vercel.app)
+3. 💱 **Currency Converter**
+4. 🌦️ [**PrakritiPulse (Weather API)**](https://prakritipulse-coderomms-projects.vercel.app)
+5. 📝 [**TaskFlow**](https://tasky-flowly.vercel.app/)
+6. 📰 [**GlobeTimes (News API)**](https://globe-times.vercel.app/)
